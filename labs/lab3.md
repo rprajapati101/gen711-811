@@ -40,14 +40,14 @@ cd ~
 
 Start with the letter c ls /bin/c*
 Start with the letter a ls /bin/*a*
-Start with the letter o ls /bin/0*
+Start with the letter o ls /bin/o*
 Contain the letter ‘a’ or the letter ‘c’ ____
 
 #### Find the line number in your history for the command that listed all the .fastq files using the absolute path. Paste the command that you used to do this below.
 1.grep / "^fastq"
 
 
-#Raw Notes
+# Raw Notes
 Directory is just a folder
 Pwd is a function that prints the directories. 
 Ls lists all folder items, ls ‘ bumps into more, just remember to finish the quote (‘), hit control+c to exit out of that state, it exits the command.
