@@ -26,21 +26,42 @@ cd ~
 ## Lab Exercises (put these answers into your lab notebooks)
 
 #### 3a  "3 ways to change directories to HOME from untrimmed_fastq"
-1.
-2.
-3.
+1. cd $home
+2. cd ~
+3. cd ../../../
+4. cd 
 
-#### 3b. How many programs in /bin 
+#### 3b. How many programs in /bin , ls /bin
 1. Do each of the following tasks from your current directory using a single ls command for each:
     - List all of the files in /Applications that start with the letter ‘c’.
     - List all of the files in /Applications that contain the letter ‘a’.
     - List all of the files in /Applications that end with the letter ‘o’.
     - Bonus: List all of the files in /Applications that contain the letter ‘a’ or the letter ‘c’.
 
-Start with the letter c ____
-Start with the letter a ____
-Start with the letter o ____
+Start with the letter c ls /bin/c*
+Start with the letter a ls /bin/*a*
+Start with the letter o ls /bin/0*
 Contain the letter ‘a’ or the letter ‘c’ ____
 
 #### Find the line number in your history for the command that listed all the .fastq files using the absolute path. Paste the command that you used to do this below.
-1.
+1.grep / "^fastq"
+
+
+#Raw Notes
+Directory is just a folder
+Pwd is a function that prints the directories. 
+Ls lists all folder items, ls ‘ bumps into more, just remember to finish the quote (‘), hit control+c to exit out of that state, it exits the command.
+	Ls has options, to specify do (-F) CASE SENSITIVEafter command: the -F forward slash shows that it is a repository
+	Man ls (will give complete manual)(use google instead)
+	Ls-lrth give information on the folder
+Clear clears the directories
+Tab complete key gets typing quick
+Head  (put in file name) prints 10 lines
+Cat prints the whole file. 
+Cd ../ will take you back and if you add ../ its two steps out
+Cd ~  will bring you back to the home directory
+Rm -fR  will remove everything
+Grep then do @to search in quotations, ^ searches the first line, put file name in the end
+‘*’ Is a substitution unit
+“ | “ this command pipes the output to a different command
+Wc will count, -l count the lines -w counts the words, -c counts ths characters
